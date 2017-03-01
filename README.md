@@ -75,4 +75,4 @@ By default homebridge-people listens on port 51828 for updates.  This can be cha
 
 # Notes
 ## Running on a raspberry pi as non 'pi' user
-On some versions of raspbian, users are not able to use the ping program by default. If none of your devices show online try running ```sudo chmod u+s /bin/ping```. Thanks to oberstmueller for the tip.
+On some versions of raspbian, users are not able to use the ping program by default. If none of your devices show online try running ```sudo chmod u+s /bin/ping```. Thanks to oberstmueller for the tip. Another option would be to add /bin/ping inside  /etc/sudoers.d/010_pi-nopasswd for the specific user (like homebridge ALL=(ALL) NOPASSWD: /bin/ping
